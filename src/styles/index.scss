@@ -1,11 +1,40 @@
 @use 'reset';
 @use 'vars';
 
-@font-face {
-  font-family: 'Roboto';
-  src: url('../assets/fonts/Roboto-Regular.ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;500;700&display=swap');
 
 body {
-  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Spartan', sans-serif;
+  background: url("../assets/img/empire-state-building-1081929-min.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.header,
+.footer {
+  padding: vars.$spacer*3;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: .75rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+.subtitle {
+  padding: 1.5em 1em 1em;
+  font-weight: 700;
+  border-bottom: 1px solid vars.$color-primary;
+}
+.tagline {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.scrollable_container {
+  max-height: 200px;
+  overflow: auto;
 }

@@ -1,0 +1,10 @@
+@use "sass:color";
+@use 'src/styles/vars';
+
+.app {
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: vars.$spacer;
+  overflow: hidden;
+  box-shadow: 0 0 5px color.adjust(vars.$color-primary, $blackness: 50%, $alpha: 0.35);
+}

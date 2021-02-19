@@ -1,0 +1,8 @@
+@use "sass:color";
+@use 'src/styles/vars';
+
+.header {
+  padding: vars.$spacer*3;
+  color: vars.$color-light;
+  background-color: vars.$color-primary;
+}

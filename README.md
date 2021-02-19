@@ -31,5 +31,4 @@ npm start
 - Babel
 - Sass
 
-API utilisée pour recueillir les données :
-- https://github.com/exchangeratesapi/exchangeratesapi
+Les données utilisées par cette app sont totalement factices.

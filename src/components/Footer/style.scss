@@ -1,0 +1,6 @@
+@use 'src/styles/vars';
+
+.footer {
+  color: vars.$color-primary;
+  background-color: vars.$color-light;
+}

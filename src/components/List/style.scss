@@ -1,0 +1,21 @@
+@use 'src/styles/vars';
+
+.list {
+
+  &_item {
+    padding: vars.$spacer;
+    border-bottom: 1px solid vars.$color-primary;
+    transition: background-color 1s, padding-left .2s;
+    cursor: pointer;
+
+    &:last-child {
+      border-bottom-width: 0;
+    }
+
+    &:hover {
+      background-color: vars.$color-alt;
+      padding-left: vars.$spacer*1.35;
+      transition: background-color .2s, padding-left .2s;
+    }
+  }
+}

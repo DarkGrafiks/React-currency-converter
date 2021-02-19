@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Header from 'src/components/Header';
 import Currencies from 'src/components/Currencies';
@@ -11,15 +11,23 @@ import fakeData from 'src/data/currencies';
 const App = () => {
   const [currencies, setCurrencies] = useState(fakeData);
   const [currencyBase, setCurrencyBase] = useState('euro');
-  const selectedCurrency = 'United States Dollar';
-  const exchangeRate = 1.259876;
+  const [baseAmount, setBaseAmount] = useState(1);
+  const [selectedCurrency, setSelectedCurrency] = useState(fakeData[0]);
+
+  const handleItemClick = (name) => {
+    const findCurrency = currencies.find((el) => el.name === name);
+    setSelectedCurrency(findCurrency);
+  };
 
   return (
     <section className="app">
 
-      <Header currencyBase={currencyBase} />
-      <Currencies currencies={currencies} />
-      <Footer currency={selectedCurrency} exchangeRate={exchangeRate} />
+      <Header currencyBase={currencyBase} baseAmount={baseAmount} />
+      <Currencies
+        currencies={currencies}
+        handleItemClick={handleItemClick}
+      />
+      <Footer exchangeData={selectedCurrency} />
 
     </section>
   );

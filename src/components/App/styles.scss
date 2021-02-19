@@ -2,7 +2,7 @@
 @use 'src/styles/vars';
 
 .app {
-  max-width: 300px;
+  width: 300px;
   margin: 0 auto;
   border-radius: vars.$spacer;
   overflow: hidden;

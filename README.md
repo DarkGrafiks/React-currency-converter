@@ -32,3 +32,5 @@ npm start
 - Sass
 
 Les données utilisées par cette app sont totalement factices.
+
+Crédits photo : https://pixabay.com/fr/photos/empire-state-building-usa-1081929/

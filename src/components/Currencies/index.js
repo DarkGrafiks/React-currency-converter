@@ -5,9 +5,20 @@ import List from 'src/components/List';
 
 import './style.scss';
 
-const Currencies = ({ currencies, selectedCurrency, handleItemClick }) => (
+const Currencies = ({
+  currencies, selectedCurrency, searchValue,
+  handleItemClick, handleChangeSearch,
+}) => (
   <div className="wrapper">
     <h3 className="subtitle">Currencies</h3>
+    <input
+      type="search"
+      className="form_input full-width"
+      placeholder="Search currency..."
+      value={searchValue}
+      onChange={(e) => handleChangeSearch(e.target.value)}
+    />
+
     <List
       list={currencies}
       selectedItem={selectedCurrency.name}
@@ -24,6 +35,8 @@ Currencies.propTypes = {
     },
   ).isRequired,
   handleItemClick: PropTypes.func.isRequired,
+  searchValue: PropTypes.string.isRequired,
+  handleChangeSearch: PropTypes.func.isRequired,
 };
 
 export default Currencies;

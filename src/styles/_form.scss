@@ -1,0 +1,23 @@
+@use "sass:color";
+@use 'src/styles/vars';
+
+input[type="number"] {
+  text-align: right;
+}
+
+.form_input {
+  margin-right: .8rem;
+  padding: .8em;
+  line-height: 1.75;
+  border: 0;
+  border-radius: .5em;
+
+  &-small {
+    width: 3rem;
+    padding: .2em;
+  }
+  &-dark {
+    color: vars.$color-light;
+    background-color: color.adjust(vars.$color-primary, $blackness: 25%);;
+  }
+}

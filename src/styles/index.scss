@@ -1,6 +1,8 @@
 @use 'reset';
 @use 'vars';
 
+@import 'form';
+
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;500;700&display=swap');
 
 * {
@@ -47,4 +49,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.full-width {
+  display: block;
+  width: 100%;
 }

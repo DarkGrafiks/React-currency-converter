@@ -3,16 +3,27 @@ import PropTypes from 'prop-types';
 
 import './style.scss';
 
-const Header = ({ baseAmount, currencyBase }) => (
+const Header = ({
+  baseAmount, handleBaseAmountChange,
+}) => (
   <header className="header">
     <h2 className="title">Converter</h2>
-    <span className="tagline">{baseAmount} {currencyBase}</span>
+    <span className="tagline dspl-flex"><input
+      className="form_input"
+      type="number"
+      min="1"
+      value={baseAmount}
+      onChange={(e) => handleBaseAmountChange(e.target.value)}
+    />
+      {baseAmount > 1 ? 'euros' : 'euro'}
+    </span>
+
   </header>
 );
 
 Header.propTypes = {
   baseAmount: PropTypes.number.isRequired,
-  currencyBase: PropTypes.string.isRequired,
+  handleBaseAmountChange: PropTypes.func.isRequired,
 };
 
 export default Header;

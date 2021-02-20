@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const ListItem = ({ item, handleItemClick }) => (
+const ListItem = ({ item, isSelected, handleItemClick }) => (
   <li
-    className="list_item"
+    className={`list_item ${isSelected ? 'list_item-active' : ''}`}
     onClick={() => handleItemClick(item.name)}
   >
     {item.name}
@@ -15,6 +15,7 @@ ListItem.propTypes = {
     name: PropTypes.string.isRequired,
   }).isRequired,
   handleItemClick: PropTypes.func.isRequired,
+  isSelected: PropTypes.bool.isRequired,
 };
 
 export default ListItem;

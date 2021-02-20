@@ -12,7 +12,8 @@
       border-bottom-width: 0;
     }
 
-    &:hover {
+    &:hover,
+    &-active {
       background-color: vars.$color-alt;
       padding-left: vars.$spacer*1.35;
       transition: background-color .2s, padding-left .2s;

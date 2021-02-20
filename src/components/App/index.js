@@ -43,6 +43,7 @@ const App = () => {
         handleBaseAmountChange={handleBaseAmountChange}
       />
       <Currencies
+        selectedCurrency={selectedCurrency}
         currencies={currencies}
         handleItemClick={handleItemClick}
       />

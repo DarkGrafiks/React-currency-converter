@@ -1,6 +1,9 @@
+
 # React currency converter
 
 Widget de conversion de devises codé en React.
+
+[Voir la démo](https://determined-hodgkin-6b0b2a.netlify.app/)
 
 ## Installation
 

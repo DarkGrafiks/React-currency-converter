@@ -3,6 +3,8 @@
 
 Widget de conversion de devises codé en React.
 
+[Voir la démo](https://determined-hodgkin-6b0b2a.netlify.app/)
+
 ## Installation
 
 Après avoir récupéré le repo, installez les packages Node :

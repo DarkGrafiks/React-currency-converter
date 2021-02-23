@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a3f790e3-108f-4072-a905-d2d5b1738523/deploy-status)](https://app.netlify.com/sites/determined-hodgkin-6b0b2a/deploys)
 # React currency converter
 
 Widget de conversion de devises codé en React.
